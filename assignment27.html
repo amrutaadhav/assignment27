@@ -77,15 +77,57 @@ background-color: #45a049;
   height:50px ;
 }
         </style>
+
        
     </head>
 <body>
+
+    <script>
+        function change(){
+        console.log( 'Change is occured')
+        }
+                            function a() {
+                                console.log('Mouse over event occured')
+                            }
+                    
+                            function b() {
+                                console.log('Mouse move event occured')
+                            }
+                    
+                            function c() {
+                                console.log('Mouse out event occured')
+                            }
+                    
+                    
+                            function btnclick() {
+                                console.log('Button once clicked');
+                            }
+        
+                            function dbl(){
+                                console.log(  'Button double clicked');
+                            }
+                            function keyPress(){
+                console.log('keyPress()')
+               }
+        
+               function keyDown(){
+                console.log('keyDown()')
+               }
+        
+               function keyUp(){ 
+                console.log('keyUp()')
+
+               function change(){
+                console.log('keychange()')
+               }
+               }  
+    </script>
     <header><b>OLD AGE HOMES</b></header>
     <div class="heighlight">
         <div class="card">
             <div class="container">
                 <h2 class="title">HOPE</h2>
-                <img src="https://www.impactguru.com/info/wp-content/uploads/2023/03/Sumukha-Old-Age-Home-pune.jpg">
+                <img src="https://www.impactguru.com/info/wp-content/uploads/2023/03/Sumukha-Old-Age-Home-pune.jpg" onmouseover="a()" onmousemove="b()" onmouseout="c()"ondblclick="dbl()">
      
                 <h2> <b>Location:</b></h2>
                 <p>Raje chowk line no 2 ambegaon pathar Sokande Patil plaza building, opposite Mauli supplier building, Pune, 
@@ -98,13 +140,14 @@ background-color: #45a049;
                 <p><b>24x7 ambulance services,food,diet,accommodation,and medical facilities like ventilators and ECG.</b><br>
                 
                 
-                <p><button>Contact Us</button></p>
+                <p><button type="button" onclick="btnclick()">Contact Us</button></p>
+                <form>  <input  type=text  placeholder="suggestions"  onkeyPress="keyPress()" onkeyDown="keyDown()" onkeyUp="keyUp()" onchange="onchange()"></form>
             </div>
         </div>
         <div class="card">
             <div class="container">
                 <h2 class="title">UTSAV LIFE</h2>
-                <img src="https://live.staticflickr.com/65535/51355250884_2d55935ed0.jpg" >
+                <img src="https://live.staticflickr.com/65535/51355250884_2d55935ed0.jpg" onmouseover="a()" onmousemove="b()" onmouseout="c()"ondblclick="dbl()" >
                 
                 <h2><b>Location:</b></h2>
                 <p>Suryadatta College of Management, Utsav Homes 3, B1, Patil Nagar, Bavdhan, Pune.</p>
@@ -118,13 +161,15 @@ background-color: #45a049;
                 <p><b> Luxury old age home with services blending home, hotel, and hospital care.</b><br><br>
                     
             
-                <p><button>Contact Us</button></p>
+                <p>  <button type="button" onclick="btnclick()">  Contact Us</button></p>
+                <form>  <input  type=text  placeholder="suggestions"  onkeyPress="keyPress()" onkeyDown="keyDown()" onkeyUp="keyUp()" onchange="onchange()"></form>
+                
             </div>
         </div>
         <div class="card">
             <div class="container">
                 <h2 class="title">NIWARA</h2>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQA95van-YbCcTUJ4IEgMFPvkdQz_RYBjR1PlKMua5Nw&s">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQA95van-YbCcTUJ4IEgMFPvkdQz_RYBjR1PlKMua5Nw&s" onmouseover="a()" onmousemove="b()" onmouseout="c()"ondblclick="dbl()">
               
                 <h2><b>Location:</b></h2>
                 <p> 96, Thosar Paga, Navi Peth, Sadashiv Peth, Pune.</p>
@@ -138,7 +183,8 @@ background-color: #45a049;
 
                 offering free services to residents, including medical care and meals.</b><br/><br><br>
                     
-                <p><button>Contact Us</button></p>
+                <p> <button type="button" onclick="btnclick()">Contact Us</button></p>
+                <form>  <input  type=text  placeholder="suggestions"onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()" onchange="onchange()"></form>
             </div> 
 </body>
 </html>
